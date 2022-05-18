@@ -90,15 +90,15 @@ if (window.location.pathname == "/preferences.php") {
 //Save variables
     document.getElementById("btn_save").addEventListener("click", function() {
       let fs = document.getElementById("txt_fontsize");
-      let tsr = document.getElementById("txt_TSReadability");
+      let tsr = document.getElementById("txt_TSiOS");
 
       localStorage.setItem("tr_fontsize", fs.value);
-      localStorage.setItem("tr_TSReadability", tsr.checked);
+      localStorage.setItem("tr_TSiOS", tsr.checked);
     });
 //Reset variables
     document.getElementById("btn_reset").addEventListener("click", function() {
       localStorage.removeItem("tr_fontsize");
-      localStorage.removeItem("tr_TSReadability");
+      localStorage.removeItem("tr_TSiOS");
     });
   };
 }
