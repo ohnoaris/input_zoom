@@ -9,3 +9,9 @@ Any issues, please contact on Discord @ arctic#0433
   <img width="325" src="https://github.com/cts0x1/input_zoom/blob/main/fontfix.gif" alt="Before & After using iOS Zoom Fix.">
 
 </p>
+
+
+
+update (18-05-2022) - 0.7.1
+ - fixed input zoom for chats
+ - set things up for future plans
