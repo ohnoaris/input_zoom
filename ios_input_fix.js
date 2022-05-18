@@ -1,9 +1,11 @@
 // ==UserScript==
 // @name         Torn iOS Input Zoom Fix
-// @version      0.6.9
+// @version      0.7.0
 // @description  Allows you to change the font-size. iOS zooms on input if font is less than 16px. Requested by Lost.
 // @author       cts
 // @match        https://www.torn.com/*
+// @updateURL    https://raw.githubusercontent.com/cts0x1/input_zoom/main/ios_input_fix.js
+// @downloadURL  https://raw.githubusercontent.com/cts0x1/input_zoom/main/ios_input_fix.js
 // @run-at       document-start
 // @grant        none
 // @namespace    cts
