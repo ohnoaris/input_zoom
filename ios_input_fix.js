@@ -1,14 +1,14 @@
 // ==UserScript==
 // @name         Torn iOS Input Zoom Fix
-// @version      0.7.0
-// @description  Allows you to change the font-size. iOS zooms on input if font is less than 16px. Requested by Lost.
+// @version      0.7.1
+// @description  Allows you to change the font-size. iOS zooms on input if font is less than 16px. 
 // @author       cts
 // @match        https://www.torn.com/*
 // @updateURL    https://raw.githubusercontent.com/cts0x1/input_zoom/main/ios_input_fix.js
 // @downloadURL  https://raw.githubusercontent.com/cts0x1/input_zoom/main/ios_input_fix.js
 // @run-at       document-start
 // @grant        none
-// @namespace    cts
+// @namespace    cts | requested by Lost.
 // ==/UserScript==
 
 //For storing font size.
@@ -36,7 +36,7 @@ if (window.location.pathname == "/preferences.php") {
          .trButton { width: 128px; background: #343434; padding: 4px 0px 4px 0px; margin: 2px 2px 0px 2px; border: 2px solid #999999; }`
     document.head.appendChild(style_settings);
 
-//stuff for blind man mode
+//Settings panel in Pref stuff.
     var clear = document.createElement("div");
     clear.className = "clear";
     var settings = document.createElement("div");
@@ -57,7 +57,7 @@ if (window.location.pathname == "/preferences.php") {
     div_fontSize.className = "trDivLine";
     var span_fontSize = document.createElement("span");
     span_fontSize.className = "trLabel";
-    span_fontSize.innerText = "Size: (16px-18px is recommended)";
+    span_fontSize.innerText = "Size: (16px-18px is recommended!)";
     var text_fontSize = document.createElement("input");
     text_fontSize.type = "text";
     text_fontSize.value = localStorage.getItem("tr_fontsize") ? localStorage.getItem("tr_fontsize") : "16px";
@@ -108,6 +108,7 @@ if (window.location.pathname == "/preferences.php") {
   cssstr+=`._message_14cwy_509 { font-size: ` + fontSize + ` }`
   cssstr+=`._chat-box-input_14cwy_789  { font-size: ` + fontSize + ` }`
   cssstr+=`._chat-box-textarea_14cwy_816  { font-size: ` + fontSize + ` }`
+  cssstr+=`._edit-note_14cwy_1279  { font-size: ` + fontSize + ` }`
 
   if (cssstr != "") {
       var style = document.createElement('style');
