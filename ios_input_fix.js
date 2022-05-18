@@ -109,7 +109,7 @@ if (window.location.pathname == "/preferences.php") {
   cssstr+=`._chat-box-input_14cwy_789 { font-size: ` + fontSize + ` }`
   cssstr+=`._chat-box-textarea_14cwy_816 { font-size: ` + fontSize + ` }`
   cssstr+=`._edit-note_14cwy_1279 { font-size: ` + fontSize + ` }`
-  cssstr+=`._title_14cwy_1357 { font-size: ` + fontSize + ` }`
+  cssstr+=`._chat-box-content_14cwy_478 { font-size: ` + fontSize + ` }`
 
   if (cssstr != "") {
       var style = document.createElement('style');
