@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         [iOS] TornPDA Input Zoom Fix
-// @version      0.7.1
+// @version      0.7.2
 // @description  iOS zooms on input less than 16px font-size. Allows you to fix that.
 // @author       cts | arctic#0433
 // @match        https://www.torn.com/*
@@ -26,14 +26,14 @@ if (window.location.pathname == "/preferences.php") {
     var style_settings = document.createElement("style");
     style_settings.type = "text/css";
     style_settings.innerHTML = `
-         .trSettings { width: 100%; height: auto; background-color: #191919; border-radius: 6px; padding: 0px 16px 8px 16px; box-sizing: border-box; }
+         .trSettings { width: 100%; height: auto; background-color: #191919; border-radius: 16px; padding: 0px 16px 8px 16px; box-sizing: border-box; outline-style: groove; outline-color: #121212; }
          .trDivLine { width: 100%; height: 16px; padding-top: 6px; padding-bottom: 6px; }
-         .trLabel { font-size: 18px; }
+         .trLabel { font-size: 16px; }
          .trTextInput { -webkit-appearance: none; width: 88%; float: right; height: 18px; border: 1px solid #212121; padding-left: 8px; }
          .trHeader { width: 100%; height: 18px; padding: 6px 0px 6px 0px; font-size: 18px; font-weight: bold; color: #fcfafa; }
          .trSeperator { display: block; height: 1px; border: 0; border-top: 1px solid #fcfafa; margin: 1em 0; padding 0; }
          .trDivButton { width: 100%; height: 16px; padding-top: 6px; padding-bottom: 6px; display: flex; align-items: center; justify-content: center; }
-         .trButton { width: 128px; background: #343434; padding: 4px 0px 4px 0px; margin: 2px 2px 0px 2px; border: 2px solid #999999; }`
+         .trButton { width: 128px; background: #343434; padding: 4px 0px 4px 0px; margin: 2px 2px 0px 2px; border: 2px solid #171717; }`
     document.head.appendChild(style_settings);
 
 //stuff for blind man mode
