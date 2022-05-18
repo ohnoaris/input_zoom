@@ -1,8 +1,8 @@
 // ==UserScript==
-// @name         Torn iOS Input Zoom Fix
+// @name         [iOS] TornPDA Input Zoom Fix
 // @version      0.7.1
-// @description  Allows you to change the font-size. iOS zooms on input if font is less than 16px. 
-// @author       cts
+// @description  iOS zooms on input less than 16px font-size. Allows you to fix that.
+// @author       cts | arctic#0433
 // @match        https://www.torn.com/*
 // @updateURL    https://raw.githubusercontent.com/cts0x1/input_zoom/main/ios_input_fix.js
 // @downloadURL  https://raw.githubusercontent.com/cts0x1/input_zoom/main/ios_input_fix.js
@@ -28,15 +28,15 @@ if (window.location.pathname == "/preferences.php") {
     style_settings.innerHTML = `
          .trSettings { width: 100%; height: auto; background-color: #191919; border-radius: 6px; padding: 0px 16px 8px 16px; box-sizing: border-box; }
          .trDivLine { width: 100%; height: 16px; padding-top: 6px; padding-bottom: 6px; }
-         .trLabel { font-size: 16px; }
-         .trTextInput { -webkit-appearance: none; width: 88%; float: right; height: 16px; border: 1px solid #212121; padding-left: 8px; }
+         .trLabel { font-size: 18px; }
+         .trTextInput { -webkit-appearance: none; width: 88%; float: right; height: 18px; border: 1px solid #212121; padding-left: 8px; }
          .trHeader { width: 100%; height: 18px; padding: 6px 0px 6px 0px; font-size: 18px; font-weight: bold; color: #fcfafa; }
          .trSeperator { display: block; height: 1px; border: 0; border-top: 1px solid #fcfafa; margin: 1em 0; padding 0; }
          .trDivButton { width: 100%; height: 16px; padding-top: 6px; padding-bottom: 6px; display: flex; align-items: center; justify-content: center; }
          .trButton { width: 128px; background: #343434; padding: 4px 0px 4px 0px; margin: 2px 2px 0px 2px; border: 2px solid #999999; }`
     document.head.appendChild(style_settings);
 
-//Settings panel in Pref stuff.
+//stuff for blind man mode
     var clear = document.createElement("div");
     clear.className = "clear";
     var settings = document.createElement("div");
@@ -106,10 +106,8 @@ if (window.location.pathname == "/preferences.php") {
 //Setting fontsize for chat in CSS
   var cssstr = ""
   cssstr+=`._message_14cwy_509 { font-size: ` + fontSize + ` }`
-  cssstr+=`._chat-box-input_14cwy_789 { font-size: ` + fontSize + ` }`
-  cssstr+=`._chat-box-textarea_14cwy_816 { font-size: ` + fontSize + ` }`
-  cssstr+=`._edit-note_14cwy_1279 { font-size: ` + fontSize + ` }`
-  cssstr+=`._chat-box-content_14cwy_478 { font-size: ` + fontSize + ` }`
+  cssstr+=`._chat-box-input_14cwy_789  { font-size: ` + fontSize + ` }`
+  cssstr+=`._chat-box-textarea_14cwy_816  { font-size: ` + fontSize + ` }`
 
   if (cssstr != "") {
       var style = document.createElement('style');
