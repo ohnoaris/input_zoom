@@ -31,7 +31,8 @@ Any issues, please contact on Discord @ arctic#0433 or Torn - cts [2621827]
 
 </p>
 
-
+**Credits:**
+A huge thanks to Nemithrell[2110417] for the Torn Readability script I could modify to make this.
 
 update (18-05-2022) - 0.7.1
  - fixed input zoom for chats
