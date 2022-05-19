@@ -2,7 +2,7 @@
 // @name         [iOS] TornPDA Input Zoom Fix
 // @version      0.7.2
 // @description  iOS zooms on input less than 16px font-size. Allows you to fix that.
-// @author       cts [2621827] | arctic#0433
+// @author       cts [2621827] | Nemithrell[2110417]
 // @match        https://www.torn.com/*
 // @updateURL    https://raw.githubusercontent.com/cts0x1/input_zoom/main/ios_input_fix.js
 // @downloadURL  https://raw.githubusercontent.com/cts0x1/input_zoom/main/ios_input_fix.js
