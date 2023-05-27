@@ -24,7 +24,6 @@ This happens when the font-size is below 16px and Apple claim it's a 'feature'. 
 - Click 'File', then 'Save' and head to your [Preferences](https://www.torn.com/preferences.php)
 - You should see it!
 
-Any issues, please contact on Discord @ arctic#0433 or Torn - cts [2621827]
 <p align="center">
 
   <img width="325" src="https://github.com/cts0x1/input_zoom/blob/main/fontfix.gif" alt="Before & After using iOS Zoom Fix.">
